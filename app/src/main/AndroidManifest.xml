@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sudichina.shipperclient">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!--获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <!--用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <!--这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!--用于访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <!--用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <!--写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- AutoLayout 配置 -->
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+
+        <activity android:name=".view.BaseActivity" />
+        <activity android:name=".view.MainActivity"></activity>
+        <activity android:name=".view.RegisterActivity" />
+        <activity android:name=".view.AboutActivity" /><!--关于-->
+        <activity android:name=".view.AddressActivity" /><!--常用地址-->
+        <activity android:name=".view.HelpActivity" /><!--帮助-->
+        <activity android:name=".view.InvoiceActivity" /><!--发票-->
+        <activity android:name=".view.MessageActivity" /><!--消息-->
+        <activity android:name=".view.OrderActivity" /><!--订单-->
+        <activity android:name=".view.PayActivity" /><!--支付方式-->
+        <activity android:name=".view.OwnActivity" /><!--个人中心-->
+        <activity android:name=".view.SetUpActivity" /><!--设置-->
+        <activity android:name=".view.ShareActivity" /><!--邀请奖励-->
+        <activity android:name=".view.Add_NewAddressActivity" /><!--添加新的收货地址-->
+        <activity android:name=".view.YinlanActivity" /><!--银联支付-->
+        <activity android:name=".view.AlipayActivity" /><!--支付宝-->
+        <activity android:name=".view.CityPickerActivity" /><!--支付宝-->
+        <!--城市列表-->
+        <activity android:name=".view.LoginActivity">
+
+
+        </activity>
+        <activity android:name=".view.ForgotPwdActivity" />
+        <activity android:name=".view.QuickLoginActivity" />
+        <activity android:name=".view.MeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.amap.api.location.APSService"></service>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="965c3782459bd1642829b28bcf71de3e">//开发者申请的key
+        </meta-data>
+    </application>
+
+</manifest>

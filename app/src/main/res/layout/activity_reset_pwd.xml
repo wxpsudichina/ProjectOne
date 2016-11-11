@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="70px"
+        android:background="@drawable/quick_login_input_border"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="148px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="输入密码"
+            android:textColor="#696969"
+            android:textSize="48px" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="54px"
+            android:background="#949494" />
+
+        <EditText
+            android:id="@+id/et_new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="38px"
+            android:background="@null"
+            android:hint="请输入您的密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="#c6c6c6"
+            android:textCursorDrawable="@null"
+            android:textSize="38px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="70px"
+        android:layout_marginTop="48px"
+        android:background="@drawable/quick_login_input_border"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="148px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="再次输入"
+            android:textColor="#696969"
+            android:textSize="38px" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="54px"
+            android:background="#949494" />
+
+        <EditText
+            android:id="@+id/et_cfm_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="38px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请再次输入您的密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="#c6c6c6"
+            android:textCursorDrawable="@null"
+            android:textSize="38px" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码有6-20位英文字母、数字或者符号组成" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="940px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="70px"
+        android:layout_marginTop="70px"
+        android:background="@drawable/btn_login_bg"
+        android:text="继续"
+        android:textColor="#ffffff"
+        android:textSize="40px"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="20px"
+        android:paddingLeft="12px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击注册表示同意\u3000“" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分通物流用户协议"
+            android:textColor="#56c4ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="”" />
+    </LinearLayout>
+
+</LinearLayout>

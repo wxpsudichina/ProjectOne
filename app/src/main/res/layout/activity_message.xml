@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="147px"
+        android:background="#363639">
+
+        <ImageView
+            android:id="@+id/activ_sort_iv_back"
+            android:layout_width="35px"
+            android:layout_height="50px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="45px"
+            android:src="@mipmap/zero_iv_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="消息"
+            android:textColor="#ffffff"
+            android:textSize="58px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230px"
+        android:background="#ffffff"
+        >
+        <ImageView
+            android:id="@+id/iv_action"
+            android:src="@mipmap/iv_message_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分通活动"
+            android:textSize="46px"
+            android:textColor="#333333"
+            android:layout_marginTop="70px"
+            android:layout_marginLeft="225px"
+            />
+        <TextView
+            android:text="最高物流福利，送给你"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135px"
+            android:layout_marginLeft="225px"
+            />
+
+        <TextView
+            android:text="昨天"
+            android:layout_alignParentRight="true"
+            android:textColor="#999999"
+            android:textSize="36px"
+            android:layout_marginTop="70px"
+            android:layout_marginRight="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/iv_message_log"
+            android:layout_marginTop="70px"
+            android:layout_marginLeft="430px"
+            />
+    </RelativeLayout>
+
+    <View
+        android:background="#efefef"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230px"
+        android:background="#ffffff"
+        >
+        <ImageView
+            android:src="@mipmap/iv_message_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通知信息"
+            android:textSize="46px"
+            android:textColor="#333333"
+            android:layout_marginTop="70px"
+            android:layout_marginLeft="225px"
+            />
+        <TextView
+            android:text="最高物流福利，已发送"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135px"
+            android:layout_marginLeft="225px"
+            />
+
+        <TextView
+            android:text="09:36"
+            android:layout_alignParentRight="true"
+            android:textColor="#999999"
+            android:textSize="36px"
+            android:layout_marginTop="70px"
+            android:layout_marginRight="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/iv_message_log"
+            android:layout_marginTop="70px"
+            android:layout_marginLeft="430px"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

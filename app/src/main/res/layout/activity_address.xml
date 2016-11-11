@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="#363639">
+
+        <ImageView
+            android:id="@+id/activ_sort_iv_back"
+            android:layout_width="35px"
+            android:layout_height="50px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="45px"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/zero_iv_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="管理收货地址"
+            android:textColor="#ffffff"
+            android:textSize="58px" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview_address"
+        android:background="#efefef"
+        android:layout_width="match_parent"
+        android:layout_weight="8"
+        android:layout_height="0px">
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/add_newaddress"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:background="#477acc"
+        android:layout_height="0px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="添加新地址"
+            android:textColor="#ffffff"
+            android:textSize="48px"
+            />
+    </RelativeLayout>
+</LinearLayout>

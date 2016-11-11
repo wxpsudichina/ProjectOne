@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@color/mainColor">
+
+        <ImageView
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@mipmap/go_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登陆"
+            android:textColor="@android:color/white"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/tv_quick_login"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="54px"
+            android:gravity="center"
+            android:text="快捷登陆"
+            android:textColor="@android:color/white"
+            android:textSize="40px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="180px"
+            android:layout_marginTop="180px"
+            android:src="@mipmap/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:layout_marginLeft="70px"
+            android:layout_marginRight="70px"
+            android:background="@drawable/quick_login_input_border"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="148px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="+86"
+                android:textColor="#696969"
+                android:textSize="48px" />
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="54px"
+                android:background="#949494" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_phone_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="38px"
+                android:background="@null"
+                android:hint="请输入您的手机号"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColorHint="#c6c6c6"
+                android:textCursorDrawable="@null"
+                android:textSize="38px"
+                app:met_clearButton="true"
+                app:met_hideUnderline="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:layout_marginLeft="70px"
+            android:layout_marginRight="70px"
+            android:layout_marginTop="48px"
+            android:background="@drawable/quick_login_input_border"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="148px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="密码"
+                android:textColor="#696969"
+                android:textSize="48px" />
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="54px"
+                android:background="#949494" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_pwd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="38px"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入您的密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColorHint="#c6c6c6"
+                android:textCursorDrawable="@null"
+                android:textSize="38px"
+                app:met_clearButton="true"
+                app:met_hideUnderline="true" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@android:style/Widget.Holo.Button.Borderless.Small"
+            android:layout_width="900px"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80px"
+            android:background="@drawable/btn_login_bg"
+            android:text="登录"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:paddingEnd="90px"
+            android:paddingStart="90px">
+
+            <TextView
+                android:id="@+id/tv_forgot_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="忘记密码？" />
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="立即注册" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

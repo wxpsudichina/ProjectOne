@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="218px"
+    android:background="#3a3c41"
+    android:gravity="center_vertical"
+    android:paddingBottom="36px"
+    android:paddingTop="66px">
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58px"
+        android:src="@mipmap/avatar" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46px"
+        android:text="杜师傅"
+        android:textColor="#ffffff"
+        android:textSize="46px"
+        android:textStyle="bold" />
+
+</LinearLayout>

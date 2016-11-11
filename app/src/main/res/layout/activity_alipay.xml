@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ebebeb"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="185px"
+        android:background="#35363a"
+        >
+        <ImageView
+            android:id="@+id/alipay_fragemnt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/go_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="75px"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝"
+            android:textColor="#ffffff"
+            android:textSize="38px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="38px"
+            android:textColor="#ffffff"
+            android:layout_marginRight="40px"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="输入支付宝关联账户信息"
+            android:layout_marginTop="66px"
+            android:textSize="36px"
+            android:textColor="#666666"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="144px"
+    android:background="@drawable/et_pay_bg"
+    android:layout_marginLeft="40px"
+    android:layout_marginRight="40px"
+    android:layout_marginTop="38px"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="支付宝账户"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginLeft="66px"
+        android:textSize="40px"
+        />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/register_et_phone_no"
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:layout_marginLeft="38px"
+        android:hint="邮箱地址/手机号码"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:textColorHint="#c6c6c6"
+        android:textCursorDrawable="@null"
+        android:textSize="38px"
+        app:met_clearButton="true"
+        app:met_hideUnderline="true" />
+
+</LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击保存按键，表示我已经阅读并同意支付宝协议"
+        android:textSize="26px"
+        android:layout_marginTop="16px"
+        android:layout_marginLeft="60px"
+        />
+</LinearLayout>

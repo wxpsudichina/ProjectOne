@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="147px"
+        android:background="#363639">
+
+        <ImageView
+            android:id="@+id/activ_sort_iv_back"
+            android:layout_width="35px"
+            android:layout_height="50px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="45px"
+            android:src="@mipmap/zero_iv_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="出发地"
+            android:textColor="#ffffff"
+            android:textSize="60px"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="#363639">
+
+        <ImageView
+            android:id="@+id/activ_zero_iv_back"
+            android:layout_width="35px"
+            android:layout_height="50px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="55px"
+            android:src="@mipmap/zero_iv_back" />
+        <TextView
+            android:id="@+id/sort_activity_tvtag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="出发地"
+            android:textColor="#ffffff"
+            android:textSize="60px"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"></com.amap.api.maps.MapView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="#ffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+        <AutoCompleteTextView
+            android:id="@+id/sort_city_serch"
+            android:layout_width="match_parent"
+            android:layout_height="74px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="44px"
+            android:layout_marginTop="22px"
+            android:background="@drawable/sort_city_serch"
+            android:drawableLeft="@mipmap/sortcity_iv_serch"
+            android:drawablePadding="18px"
+            android:paddingLeft="304px"
+            android:hint="请输入城市名字或者拼音查询"
+            android:textSize="26px"
+            android:textColor="#666666"
+            />
+      <ListView
+          android:id="@+id/serch_lv"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+
+      </ListView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="#f00"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+        <com.sudichina.shipperclient.customview.MyLetterSortView
+            android:id="@+id/mysidebar"
+            android:layout_width="40px"
+            android:layout_height="1200px"
+            android:layout_gravity="right|center"
+            />
+
+        <ListView
+            android:id="@+id/sort_city_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            >
+        </ListView>
+    </FrameLayout>
+
+</LinearLayout>
